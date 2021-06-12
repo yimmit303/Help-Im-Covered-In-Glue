@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ConveyorBelt_angle.obj-79e1dd4d02468cd0033758cb03af309b.mesh"
+
+[deps]
+
+files=[ "res://.import/ConveyorBelt_angle.obj-79e1dd4d02468cd0033758cb03af309b.mesh" ]
+
+source_file="res://Level/ConveyorBelt/ConveyorBelt_angle.obj"
+dest_files=[ "res://.import/ConveyorBelt_angle.obj-79e1dd4d02468cd0033758cb03af309b.mesh", "res://.import/ConveyorBelt_angle.obj-79e1dd4d02468cd0033758cb03af309b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

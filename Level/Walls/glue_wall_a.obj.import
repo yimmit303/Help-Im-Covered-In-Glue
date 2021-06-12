@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_wall_a.obj-dfcd4c6c0bcd2cdb45b86640538cd0b4.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_wall_a.obj-dfcd4c6c0bcd2cdb45b86640538cd0b4.mesh" ]
+
+source_file="res://Level/Walls/glue_wall_a.obj"
+dest_files=[ "res://.import/glue_wall_a.obj-dfcd4c6c0bcd2cdb45b86640538cd0b4.mesh", "res://.import/glue_wall_a.obj-dfcd4c6c0bcd2cdb45b86640538cd0b4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

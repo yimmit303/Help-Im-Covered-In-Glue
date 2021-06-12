@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_pillar_a.obj-6f53692d13757b532402eeb75d7a0ae9.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_pillar_a.obj-6f53692d13757b532402eeb75d7a0ae9.mesh" ]
+
+source_file="res://Level/Props/glue_pillar_a.obj"
+dest_files=[ "res://.import/glue_pillar_a.obj-6f53692d13757b532402eeb75d7a0ae9.mesh", "res://.import/glue_pillar_a.obj-6f53692d13757b532402eeb75d7a0ae9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_catwalk_stairs.obj-2e6a1d4bb561438a9397bcc2f8dbe6d9.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_catwalk_stairs.obj-2e6a1d4bb561438a9397bcc2f8dbe6d9.mesh" ]
+
+source_file="res://Level/Props/glue_catwalk_stairs.obj"
+dest_files=[ "res://.import/glue_catwalk_stairs.obj-2e6a1d4bb561438a9397bcc2f8dbe6d9.mesh", "res://.import/glue_catwalk_stairs.obj-2e6a1d4bb561438a9397bcc2f8dbe6d9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
