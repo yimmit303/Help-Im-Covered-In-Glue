@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_door_a.obj-2fd77ea3f839f4351a734e91f1cdb292.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_door_a.obj-2fd77ea3f839f4351a734e91f1cdb292.mesh" ]
+
+source_file="res://Level/Props/glue_door_a.obj"
+dest_files=[ "res://.import/glue_door_a.obj-2fd77ea3f839f4351a734e91f1cdb292.mesh", "res://.import/glue_door_a.obj-2fd77ea3f839f4351a734e91f1cdb292.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

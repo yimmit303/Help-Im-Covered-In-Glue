@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_ceiling_a.obj-55974a2a1e8807da2372fad2a494a207.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_ceiling_a.obj-55974a2a1e8807da2372fad2a494a207.mesh" ]
+
+source_file="res://Level/Ceiling/glue_ceiling_a.obj"
+dest_files=[ "res://.import/glue_ceiling_a.obj-55974a2a1e8807da2372fad2a494a207.mesh", "res://.import/glue_ceiling_a.obj-55974a2a1e8807da2372fad2a494a207.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
