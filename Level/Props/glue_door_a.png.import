@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/glue_wall_b.png-803650dbf22a348df63435b29b1f663b.s3tc.stex"
-path.etc2="res://.import/glue_wall_b.png-803650dbf22a348df63435b29b1f663b.etc2.stex"
+path.s3tc="res://.import/glue_door_a.png-f59c03c5145ccf1db2fa488956b398fb.s3tc.stex"
+path.etc2="res://.import/glue_door_a.png-f59c03c5145ccf1db2fa488956b398fb.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Level/Walls/glue_wall_b.png"
-dest_files=[ "res://.import/glue_wall_b.png-803650dbf22a348df63435b29b1f663b.s3tc.stex", "res://.import/glue_wall_b.png-803650dbf22a348df63435b29b1f663b.etc2.stex" ]
+source_file="res://Level/Props/glue_door_a.png"
+dest_files=[ "res://.import/glue_door_a.png-f59c03c5145ccf1db2fa488956b398fb.s3tc.stex", "res://.import/glue_door_a.png-f59c03c5145ccf1db2fa488956b398fb.etc2.stex" ]
 
 [params]
 

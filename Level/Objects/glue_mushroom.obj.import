@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh" ]
+
+source_file="res://Level/Objects/glue_mushroom.obj"
+dest_files=[ "res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh", "res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
