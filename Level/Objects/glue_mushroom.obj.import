@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/glue_mushroom.obj-2bfe1d84c050e969c22de31d4ba3a1ff.mesh"
+path="res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh"
 
 [deps]
 
-files=[ "res://.import/glue_mushroom.obj-2bfe1d84c050e969c22de31d4ba3a1ff.mesh" ]
+files=[ "res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh" ]
 
-source_file="res://Level/Props/glue_mushroom.obj"
-dest_files=[ "res://.import/glue_mushroom.obj-2bfe1d84c050e969c22de31d4ba3a1ff.mesh", "res://.import/glue_mushroom.obj-2bfe1d84c050e969c22de31d4ba3a1ff.mesh" ]
+source_file="res://Level/Objects/glue_mushroom.obj"
+dest_files=[ "res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh", "res://.import/glue_mushroom.obj-615ddfe6abb722a9712ff492315cf470.mesh" ]
 
 [params]
 

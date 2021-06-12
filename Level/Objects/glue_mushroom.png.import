@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glue_mushroom.png-fd07cfd507376921eff3379871e7e746.stex"
+path="res://.import/glue_mushroom.png-fa8300af095f8d3a47d89db3cbac5b5c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Level/Props/glue_mushroom.png"
-dest_files=[ "res://.import/glue_mushroom.png-fd07cfd507376921eff3379871e7e746.stex" ]
+source_file="res://Level/Objects/glue_mushroom.png"
+dest_files=[ "res://.import/glue_mushroom.png-fa8300af095f8d3a47d89db3cbac5b5c.stex" ]
 
 [params]
 
