@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Level/ConveyorBelt/ConveyorBelt.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Level/ConveyorBelt/ConveyorBelt_Angle.tscn" type="PackedScene" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Level/Details/glue_pipe_b.obj" type="ArrayMesh" id=20]
 [ext_resource path="res://Level/Details/glue_pipe_a.obj" type="ArrayMesh" id=21]
 [ext_resource path="res://Level/Walls/glue_wall_d.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Level/Details/glue_light_a.tscn" type="PackedScene" id=23]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 13 )
@@ -242,3 +243,9 @@ material/0 = ExtResource( 3 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2.5, 8 )
 mesh = ExtResource( 22 )
 material/0 = ExtResource( 3 )
+
+[node name="glue_light_a" parent="." instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.995883, 5, 5.91257 )
+
+[node name="glue_light_a2" parent="." instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -5.35605, 5, 5.91257 )
