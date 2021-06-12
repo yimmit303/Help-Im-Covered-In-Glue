@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_robot_arm-1.obj-8c5b15469e7399b1bc76e69a3241d51f.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_robot_arm-1.obj-8c5b15469e7399b1bc76e69a3241d51f.mesh" ]
+
+source_file="res://Level/Details/glue_robot_arm-1.obj"
+dest_files=[ "res://.import/glue_robot_arm-1.obj-8c5b15469e7399b1bc76e69a3241d51f.mesh", "res://.import/glue_robot_arm-1.obj-8c5b15469e7399b1bc76e69a3241d51f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
