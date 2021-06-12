@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_monitor.obj-2fd2124f00d6665e77ea3a5a5f292277.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_monitor.obj-2fd2124f00d6665e77ea3a5a5f292277.mesh" ]
+
+source_file="res://Level/Objects/glue_monitor.obj"
+dest_files=[ "res://.import/glue_monitor.obj-2fd2124f00d6665e77ea3a5a5f292277.mesh", "res://.import/glue_monitor.obj-2fd2124f00d6665e77ea3a5a5f292277.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

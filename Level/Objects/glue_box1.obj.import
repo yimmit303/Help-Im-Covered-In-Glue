@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_box1.obj-23843f0f62419ff113f0a581918ab9f0.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_box1.obj-23843f0f62419ff113f0a581918ab9f0.mesh" ]
+
+source_file="res://Level/Objects/glue_box1.obj"
+dest_files=[ "res://.import/glue_box1.obj-23843f0f62419ff113f0a581918ab9f0.mesh", "res://.import/glue_box1.obj-23843f0f62419ff113f0a581918ab9f0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
