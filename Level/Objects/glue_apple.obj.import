@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_apple.obj-b72f02d2092c250a5962167b9b81766e.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_apple.obj-b72f02d2092c250a5962167b9b81766e.mesh" ]
+
+source_file="res://Level/Objects/glue_apple.obj"
+dest_files=[ "res://.import/glue_apple.obj-b72f02d2092c250a5962167b9b81766e.mesh", "res://.import/glue_apple.obj-b72f02d2092c250a5962167b9b81766e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_cinnamon_roll.obj-aa4d372868faeab47be3829ad0a7309b.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_cinnamon_roll.obj-aa4d372868faeab47be3829ad0a7309b.mesh" ]
+
+source_file="res://Level/Objects/glue_cinnamon_roll.obj"
+dest_files=[ "res://.import/glue_cinnamon_roll.obj-aa4d372868faeab47be3829ad0a7309b.mesh", "res://.import/glue_cinnamon_roll.obj-aa4d372868faeab47be3829ad0a7309b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
