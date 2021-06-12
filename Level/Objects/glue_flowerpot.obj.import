@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_flowerpot.obj-1e20b12d8d5792e51dc08e2e08d2b6cb.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_flowerpot.obj-1e20b12d8d5792e51dc08e2e08d2b6cb.mesh" ]
+
+source_file="res://Level/Objects/glue_flowerpot.obj"
+dest_files=[ "res://.import/glue_flowerpot.obj-1e20b12d8d5792e51dc08e2e08d2b6cb.mesh", "res://.import/glue_flowerpot.obj-1e20b12d8d5792e51dc08e2e08d2b6cb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
