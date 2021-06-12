@@ -1,0 +1,596 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Level/Details/glue_tank_a.png" type="Texture" id=1]
+[ext_resource path="res://Level/Details/glue_tank_a_emissive.png" type="Texture" id=2]
+[ext_resource path="res://Level/Walls/glue_wall_c.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Level/Details/glue_pipe_b.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Level/Details/glue_pipe_a.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Level/Walls/glue_wall_b.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Level/Details/glue_tank_a.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Level/Details/glue_light_a.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Resources/BaseSpatial.tres" type="Material" id=14]
+[ext_resource path="res://Level/Flooring/glue_floor_d.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Level/Flooring/glue_floor_a.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Level/Ceiling/glue_ceiling_a.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Level/Props/glue_door_a.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Level/Walls/glue_wall_a.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Level/Flooring/glue_floor_c.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Level/Props/glue_door_a.png" type="Texture" id=26]
+[ext_resource path="res://Level/Props/glue_door_emissive.png" type="Texture" id=27]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 26 )
+emission_enabled = true
+emission = Color( 0, 0, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+emission_texture = ExtResource( 27 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+emission_enabled = true
+emission = Color( 0, 0, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+emission_texture = ExtResource( 2 )
+
+[node name="Room_002" type="Spatial"]
+
+[node name="glue_floor_a2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a10" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.6, 1.03923, 4, 1.01388, 7.98407 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a12" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.6, 1.03923, 0, 1.01388, 7.98407 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a13" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.6, 1.03923, -4, 1.01388, 7.98407 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a11" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 12 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a14" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 12 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_a15" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 12 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d2" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d3" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 2, 16 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d4" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 2, 16 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d5" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 2, 16 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d6" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 0, 2, 23 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d7" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 4, 2, 23 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_d8" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 2, 23 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 0 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a9" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a10" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a11" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 4 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a12" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 4 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a13" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 4 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a14" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 8 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a15" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5, 8 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a16" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 8 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a20" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 4, 8, 2 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a21" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -4, 8, 2 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a22" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 8, 2 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a17" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 12 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a18" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5, 12 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a19" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 12 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a25" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 16 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_door_a2" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2, 25 )
+mesh = ExtResource( 21 )
+material/0 = SubResource( 1 )
+
+[node name="glue_floor_c4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -2, 20 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_c5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_c6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 20 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_c2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_floor_c3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a4" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, 0 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a5" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, 4 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_pipe_a" type="MeshInstance" parent="."]
+transform = Transform( 1.13133e-08, 0.258819, 0.965926, 1, -4.37114e-08, 0, 4.2222e-08, 0.965926, -0.258819, 4.72719, 4.3717, 19.9167 )
+mesh = ExtResource( 6 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_pipe_a2" type="MeshInstance" parent="."]
+transform = Transform( 1.13133e-08, 0.258819, 0.965926, 1, -4.37114e-08, 0, 4.2222e-08, 0.965926, -0.258819, 4.72719, 8.3717, 19.9167 )
+mesh = ExtResource( 6 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_pipe_b" type="MeshInstance" parent="."]
+transform = Transform( -3.83917e-08, 0.8783, 0.478109, -1, -4.37114e-08, 0, 2.08988e-08, -0.478109, 0.8783, 4.69491, 4.3199, 19.2277 )
+mesh = ExtResource( 5 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_pipe_b2" type="MeshInstance" parent="."]
+transform = Transform( -3.83917e-08, 0.8783, 0.478109, -1, -4.37114e-08, 0, 2.08988e-08, -0.478109, 0.8783, 4.69491, 6.3199, 19.2277 )
+mesh = ExtResource( 5 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_pipe_b3" type="MeshInstance" parent="."]
+transform = Transform( -3.83917e-08, 0.8783, 0.478109, -1, -4.37114e-08, 0, 2.08988e-08, -0.478109, 0.8783, 4.69491, 8.3199, 19.2277 )
+mesh = ExtResource( 5 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_pipe_b4" type="MeshInstance" parent="."]
+transform = Transform( -3.83917e-08, 0.8783, 0.478109, -1, -4.37114e-08, 0, 2.08988e-08, -0.478109, 0.8783, 4.69491, 10.3199, 19.2277 )
+mesh = ExtResource( 5 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 0 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c4" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 4, 0 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c6" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 4, 4 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, 0 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b3" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 5, 20 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b5" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 1, 24 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b6" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 5, 16 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c5" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 4, 0 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c8" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 4, 4 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c7" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, -1, 8 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_c9" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, -1, 8 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a8" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 1, 12 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a9" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 1, 12 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a10" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 5, 12 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a11" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 5, 12 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a32" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 1, 8 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a33" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 1, 8 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a34" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 5, 8 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a35" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 5, 8 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a23" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 16 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a24" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5, 16 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a12" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 1, 16 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a13" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 1, 16 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a14" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 5, 16 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a26" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 20 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a27" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 20 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a28" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5, 20 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a16" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 1, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a25" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, -3, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a26" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, -2, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a27" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -2, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a28" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, -2, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a29" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -4, -2, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a30" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, -2, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a31" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 4, -2, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a17" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 1, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a24" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, -3, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a19" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 5, 20 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a29" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 24 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a30" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, 24 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_ceiling_a31" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 5, 24 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a20" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 1, 24 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a22" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 5, 24 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a23" type="MeshInstance" parent="."]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -4, 5, 24 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b7" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 2, 23 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a36" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, -4, 6, 23 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b8" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 2, 23 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a37" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 4, 6, 23 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a38" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 0, 6, 23 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_a7" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 0, 4 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_wall_b4" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4, 0, 0 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 14 )
+
+[node name="glue_light_a4" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 9, 12 )
+
+[node name="glue_light_a5" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 5.92398, 2 )
+
+[node name="glue_tank_a3" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.53233, -2, 19.6524 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 2 )
+
+[node name="glue_tank_a4" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.53233, -2, 19.6524 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 2 )
+
+[node name="glue_tank_a5" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -1.46767, -2, 19.6524 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 2 )
+
+[node name="glue_tank_a6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -4.46767, -2, 19.6524 )
+mesh = ExtResource( 9 )
+material/0 = SubResource( 2 )
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.0202097, -0.999796, 0, 0.999796, -0.0202097, 1.62674, 1.13264, 19.6082 )
+light_color = Color( 0.290196, 0.827451, 0.34902, 1 )
+light_energy = 10.0
+spot_range = 10.0
+spot_attenuation = 2.2974
+spot_angle = 87.6
+spot_angle_attenuation = 1.31951
+
+[node name="SpotLight2" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.0202097, -0.999796, 0, 0.999796, -0.0202097, 4.59044, 1.13264, 19.6082 )
+light_color = Color( 0.290196, 0.827451, 0.34902, 1 )
+light_energy = 10.0
+spot_range = 10.0
+spot_attenuation = 2.2974
+spot_angle = 87.6
+spot_angle_attenuation = 1.31951
+
+[node name="SpotLight3" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.0202097, -0.999796, 0, 0.999796, -0.0202097, -1.59933, 1.13264, 19.6082 )
+light_color = Color( 0.290196, 0.827451, 0.34902, 1 )
+light_energy = 10.0
+spot_range = 10.0
+spot_attenuation = 2.2974
+spot_angle = 87.6
+spot_angle_attenuation = 1.31951
+
+[node name="SpotLight4" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.0202097, -0.999796, 0, 0.999796, -0.0202097, -5.01712, 1.13264, 19.6082 )
+light_color = Color( 0.290196, 0.827451, 0.34902, 1 )
+light_energy = 10.0
+spot_range = 10.0
+spot_attenuation = 2.2974
+spot_angle = 87.6
+spot_angle_attenuation = 1.31951
