@@ -1,4 +1,4 @@
-[gd_scene load_steps=486 format=2]
+[gd_scene load_steps=553 format=2]
 
 [ext_resource path="res://Level/Details/glue_robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Level/ConveyorBelt/ConveyorBelt.tscn" type="PackedScene" id=2]
@@ -27,7 +27,100 @@
 [ext_resource path="res://Level/Details/glue_tank_a_emissive.png" type="Texture" id=25]
 [ext_resource path="res://Level/Props/glue_door_emissive.png" type="Texture" id=26]
 [ext_resource path="res://Level/Details/glue_tank_a.png" type="Texture" id=27]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Level/Objects/RigidBody_strawberry_cake.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Level/Objects/RigidBody_cinnamon_roll.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Level/Objects/RigidBody_fridge.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Level/Objects/RigidBody_lightbulb.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Level/Objects/RigidBody_drawers.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Level/Objects/RigidBody_box3.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Level/Objects/RigidBody_box1.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Level/Objects/RigidBody_box2.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Level/Objects/RigidBody_chair.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Level/Objects/RigidBody_book2.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Level/Objects/RigidBody_book3.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Level/Objects/RigidBody_minihouse.tscn" type="PackedScene" id=39]
+[ext_resource path="res://Level/Objects/RigidBody_book1.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Level/Objects/RigidBody_peach.tscn" type="PackedScene" id=41]
+[ext_resource path="res://Level/Objects/RigidBody_dino.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Level/Objects/RigidBody_mug.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Level/Objects/RigidBody_cake.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Level/Objects/RigidBody_apple.tscn" type="PackedScene" id=45]
+[ext_resource path="res://Level/Objects/RigidBody_plum.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Level/Objects/RigidBody_bowl1.tscn" type="PackedScene" id=47]
+[ext_resource path="res://Level/Objects/RigidBody_bowl2.tscn" type="PackedScene" id=48]
+[ext_resource path="res://Level/Objects/RigidBody_fox.tscn" type="PackedScene" id=49]
+[ext_resource path="res://Level/Objects/RigidBody_flowerpot.tscn" type="PackedScene" id=50]
+[ext_resource path="res://Level/Objects/RigidBody_monitor.tscn" type="PackedScene" id=51]
+[ext_resource path="res://Level/Objects/RigidBody_mcgrass.tscn" type="PackedScene" id=52]
+[ext_resource path="res://Level/Objects/RigidBody_book4.tscn" type="PackedScene" id=53]
+[ext_resource path="res://Level/Objects/RigidBody_sprinkle_cake.tscn" type="PackedScene" id=54]
+[ext_resource path="res://Level/Objects/RigidBody_trophy.tscn" type="PackedScene" id=55]
+
+[sub_resource type="ConvexPolygonShape" id=465]
+points = PoolVector3Array( -0.150365, 0.109489, -0.59862, -0.135766, -6.93889e-18, -0.795588, -0.135766, 0, -0.616858, -0.131387, 0.1, -0.7934, -0.106558, -0.00729927, -1.00725, -0.106558, -0.00729927, -0.481803, -0.106558, 0.109489, -1.00725, -0.106558, 0.109489, -0.481803, 0.0101847, -0.00729927, -1.00725, 0.0101847, -0.00729927, -0.481803, 0.0101847, 0.109489, -1.00725, 0.0101847, 0.109489, -0.481803, 0.0642336, 0.1, -0.7934, 0.0686132, 6.93889e-18, -0.795588, 0.0686132, 0, -0.616858, 0.0832117, 0.109489, -0.59862 )
+
+[sub_resource type="ConvexPolygonShape" id=466]
+points = PoolVector3Array( -0.22335, -0.00729927, -1.00725, -0.22335, -0.00729927, -0.481803, -0.22335, 0.109489, -1.00725, -0.22335, 0.109489, -0.481803, -0.194152, -0.00729927, -1.00725, -0.194152, -0.00729927, -0.481803, -0.194152, 0.109489, -1.00725, -0.194152, 0.109489, -0.481803, -0.156302, 0.1, -0.7934, -0.156302, 0.1, -0.62233, -0.154933, 6.93889e-18, -0.795588, -0.154933, 6.93889e-18, -0.616858 )
+
+[sub_resource type="ConvexPolygonShape" id=467]
+points = PoolVector3Array( -0.223358, -0.00729927, -0.481752, -0.223358, -0.00729927, -0.175182, -0.223358, 0.109489, -0.481752, -0.223358, 0.109489, -0.175182, 0.0102004, -0.00729927, -0.481752, 0.0102004, -0.00729927, -0.175182, 0.0102004, 0.109489, -0.481752, 0.0102004, 0.109489, -0.175182, 0.0832117, -0.00729927, -0.408741, 0.0832117, -0.00729927, -0.189797, 0.0832117, 0.109489, -0.408741, 0.0832117, 0.109489, -0.189797 )
+
+[sub_resource type="ConvexPolygonShape" id=468]
+points = PoolVector3Array( -0.0773565, -0.00729927, 0.219055, -0.0773565, 0.109489, 0.219055, -0.067322, 6.93889e-18, 0.779124, -0.0643116, 0.1, 0.772012, -0.0043738, -0.00729927, 1.0073, -0.0043738, 0.109489, 1.0073, 0.0102133, -0.00729927, 0.219055, 0.0102133, 0.109489, 0.219055, 0.0701511, 0.1, 0.429851, 0.0731615, 6.93889e-18, 0.421643, 0.083196, -0.00729927, 1.0073, 0.083196, 0.109489, 1.0073 )
+
+[sub_resource type="ConvexPolygonShape" id=469]
+points = PoolVector3Array( -0.223358, -0.00729927, 0.219055, -0.223358, 0.109489, 0.219055, -0.214234, 6.93889e-18, 0.779124, -0.208753, -0.00729927, 1.0073, -0.208753, 0.109489, 1.0073, -0.0919765, -0.00729927, 1.0073, -0.0919765, 0.109489, 1.0073, -0.0864963, 6.93889e-18, 0.779124, -0.0773722, -0.00729927, 0.219055, -0.0773722, 0.109489, 0.219055 )
+
+[sub_resource type="ConvexPolygonShape" id=470]
+points = PoolVector3Array( -0.223358, -0.00729927, -0.175182, -0.223358, -0.00729927, 0.218978, -0.223358, 0.109489, -0.175182, -0.223358, 0.109489, 0.218978, 0.0102004, -0.00729927, -0.175182, 0.0102004, -0.00729927, 0.218978, 0.0102004, 0.109489, -0.175182, 0.0102004, 0.109489, 0.218978, 0.0832117, -0.00729927, -0.0145628, 0.0832117, -0.00729927, 0.204355, 0.0832117, 0.109489, -0.0145628, 0.0832117, 0.109489, 0.204355 )
+
+[sub_resource type="ConvexPolygonShape" id=471]
+points = PoolVector3Array( -0.427737, -0.00729927, -0.613103, -0.427737, -0.00729927, -0.394215, -0.427737, 0.109489, -0.613103, -0.427737, 0.109489, -0.394215, -0.413113, -0.00729927, -0.715294, -0.413113, -0.00729927, -0.364998, -0.413113, 0.109489, -0.715294, -0.413113, 0.109489, -0.364998, -0.296359, -0.00729927, -0.715294, -0.296359, -0.00729927, -0.364998, -0.296359, 0.109489, -0.715294, -0.296359, 0.109489, -0.364998, -0.223358, -0.00729927, -0.613103, -0.223358, -0.00729927, -0.394215, -0.223358, 0.109489, -0.613103, -0.223358, 0.109489, -0.394215 )
+
+[sub_resource type="ConvexPolygonShape" id=472]
+points = PoolVector3Array( -0.427737, -0.00729927, -1.0073, -0.427737, -0.00729927, -0.78835, -0.427737, 0.109489, -1.0073, -0.427737, 0.109489, -0.78835, -0.413113, -0.00729927, -0.715328, -0.413113, 0.109489, -0.715328, -0.296359, -0.00729927, -0.715328, -0.296359, 0.109489, -0.715328, -0.223358, -0.00729927, -1.0073, -0.223358, -0.00729927, -0.78835, -0.223358, 0.109489, -1.0073, -0.223358, 0.109489, -0.78835 )
+
+[sub_resource type="ConvexPolygonShape" id=473]
+points = PoolVector3Array( -0.427737, 0.109489, -0.204192, -0.427737, 0.109489, 0.802743, -0.414963, 6.93889e-18, -0.138514, -0.414963, 0, 0.742554, -0.413113, -0.00729927, -0.364829, -0.413113, -0.00729927, 1.0073, -0.413113, 0.109489, -0.364829, -0.413113, 0.109489, 1.0073, -0.296359, -0.00729927, -0.364829, -0.296359, -0.00729927, 1.0073, -0.296359, 0.109489, -0.364829, -0.296359, 0.109489, 1.0073, -0.236131, 6.93889e-18, -0.138514, -0.236131, -6.93889e-18, 0.742554, -0.223358, 0.109489, -0.204192, -0.223358, 0.109489, 0.802743 )
+
+[sub_resource type="ConvexPolygonShape" id=474]
+points = PoolVector3Array( -0.807268, -0.00729927, -1.0073, -0.807268, -0.00729927, 1.0073, -0.807268, 0.109489, -1.0073, -0.807268, 0.109489, 1.0073, -0.486138, -0.00729927, 1.0073, -0.486138, 0.109489, 1.0073, -0.427774, -0.00729927, -1.0073, -0.427774, -0.00729927, 0.802803, -0.427774, 0.109489, -1.0073, -0.427774, 0.109489, 0.802803 )
+
+[sub_resource type="ConvexPolygonShape" id=475]
+points = PoolVector3Array( 0.0832832, -0.00729927, -0.802803, 0.0832832, -0.00729927, 1.0073, 0.0832832, 0.109489, -0.802803, 0.0832832, 0.109489, 1.0073, 0.0978588, -0.00729927, -1.0073, 0.0978588, 0.109489, -1.0073, 0.813139, -0.00729927, -1.0073, 0.813139, -0.00729927, 1.0073, 0.813139, 0.109489, -1.0073, 0.813139, 0.109489, 1.0073 )
+
+[sub_resource type="ConvexPolygonShape" id=476]
+points = PoolVector3Array( -0.150365, 0.109489, -0.59862, -0.135766, -6.93889e-18, -0.795588, -0.135766, 0, -0.616858, -0.131387, 0.1, -0.7934, -0.106558, -0.00729927, -1.00725, -0.106558, -0.00729927, -0.481803, -0.106558, 0.109489, -1.00725, -0.106558, 0.109489, -0.481803, 0.0101847, -0.00729927, -1.00725, 0.0101847, -0.00729927, -0.481803, 0.0101847, 0.109489, -1.00725, 0.0101847, 0.109489, -0.481803, 0.0642336, 0.1, -0.7934, 0.0686132, 6.93889e-18, -0.795588, 0.0686132, 0, -0.616858, 0.0832117, 0.109489, -0.59862 )
+
+[sub_resource type="ConvexPolygonShape" id=477]
+points = PoolVector3Array( -0.22335, -0.00729927, -1.00725, -0.22335, -0.00729927, -0.481803, -0.22335, 0.109489, -1.00725, -0.22335, 0.109489, -0.481803, -0.194152, -0.00729927, -1.00725, -0.194152, -0.00729927, -0.481803, -0.194152, 0.109489, -1.00725, -0.194152, 0.109489, -0.481803, -0.156302, 0.1, -0.7934, -0.156302, 0.1, -0.62233, -0.154933, 6.93889e-18, -0.795588, -0.154933, 6.93889e-18, -0.616858 )
+
+[sub_resource type="ConvexPolygonShape" id=478]
+points = PoolVector3Array( -0.223358, -0.00729927, -0.481752, -0.223358, -0.00729927, -0.175182, -0.223358, 0.109489, -0.481752, -0.223358, 0.109489, -0.175182, 0.0102004, -0.00729927, -0.481752, 0.0102004, -0.00729927, -0.175182, 0.0102004, 0.109489, -0.481752, 0.0102004, 0.109489, -0.175182, 0.0832117, -0.00729927, -0.408741, 0.0832117, -0.00729927, -0.189797, 0.0832117, 0.109489, -0.408741, 0.0832117, 0.109489, -0.189797 )
+
+[sub_resource type="ConvexPolygonShape" id=479]
+points = PoolVector3Array( -0.0773565, -0.00729927, 0.219055, -0.0773565, 0.109489, 0.219055, -0.067322, 6.93889e-18, 0.779124, -0.0643116, 0.1, 0.772012, -0.0043738, -0.00729927, 1.0073, -0.0043738, 0.109489, 1.0073, 0.0102133, -0.00729927, 0.219055, 0.0102133, 0.109489, 0.219055, 0.0701511, 0.1, 0.429851, 0.0731615, 6.93889e-18, 0.421643, 0.083196, -0.00729927, 1.0073, 0.083196, 0.109489, 1.0073 )
+
+[sub_resource type="ConvexPolygonShape" id=480]
+points = PoolVector3Array( -0.223358, -0.00729927, 0.219055, -0.223358, 0.109489, 0.219055, -0.214234, 6.93889e-18, 0.779124, -0.208753, -0.00729927, 1.0073, -0.208753, 0.109489, 1.0073, -0.0919765, -0.00729927, 1.0073, -0.0919765, 0.109489, 1.0073, -0.0864963, 6.93889e-18, 0.779124, -0.0773722, -0.00729927, 0.219055, -0.0773722, 0.109489, 0.219055 )
+
+[sub_resource type="ConvexPolygonShape" id=481]
+points = PoolVector3Array( -0.223358, -0.00729927, -0.175182, -0.223358, -0.00729927, 0.218978, -0.223358, 0.109489, -0.175182, -0.223358, 0.109489, 0.218978, 0.0102004, -0.00729927, -0.175182, 0.0102004, -0.00729927, 0.218978, 0.0102004, 0.109489, -0.175182, 0.0102004, 0.109489, 0.218978, 0.0832117, -0.00729927, -0.0145628, 0.0832117, -0.00729927, 0.204355, 0.0832117, 0.109489, -0.0145628, 0.0832117, 0.109489, 0.204355 )
+
+[sub_resource type="ConvexPolygonShape" id=482]
+points = PoolVector3Array( -0.427737, -0.00729927, -0.613103, -0.427737, -0.00729927, -0.394215, -0.427737, 0.109489, -0.613103, -0.427737, 0.109489, -0.394215, -0.413113, -0.00729927, -0.715294, -0.413113, -0.00729927, -0.364998, -0.413113, 0.109489, -0.715294, -0.413113, 0.109489, -0.364998, -0.296359, -0.00729927, -0.715294, -0.296359, -0.00729927, -0.364998, -0.296359, 0.109489, -0.715294, -0.296359, 0.109489, -0.364998, -0.223358, -0.00729927, -0.613103, -0.223358, -0.00729927, -0.394215, -0.223358, 0.109489, -0.613103, -0.223358, 0.109489, -0.394215 )
+
+[sub_resource type="ConvexPolygonShape" id=483]
+points = PoolVector3Array( -0.427737, -0.00729927, -1.0073, -0.427737, -0.00729927, -0.78835, -0.427737, 0.109489, -1.0073, -0.427737, 0.109489, -0.78835, -0.413113, -0.00729927, -0.715328, -0.413113, 0.109489, -0.715328, -0.296359, -0.00729927, -0.715328, -0.296359, 0.109489, -0.715328, -0.223358, -0.00729927, -1.0073, -0.223358, -0.00729927, -0.78835, -0.223358, 0.109489, -1.0073, -0.223358, 0.109489, -0.78835 )
+
+[sub_resource type="ConvexPolygonShape" id=484]
+points = PoolVector3Array( -0.427737, 0.109489, -0.204192, -0.427737, 0.109489, 0.802743, -0.414963, 6.93889e-18, -0.138514, -0.414963, 0, 0.742554, -0.413113, -0.00729927, -0.364829, -0.413113, -0.00729927, 1.0073, -0.413113, 0.109489, -0.364829, -0.413113, 0.109489, 1.0073, -0.296359, -0.00729927, -0.364829, -0.296359, -0.00729927, 1.0073, -0.296359, 0.109489, -0.364829, -0.296359, 0.109489, 1.0073, -0.236131, 6.93889e-18, -0.138514, -0.236131, -6.93889e-18, 0.742554, -0.223358, 0.109489, -0.204192, -0.223358, 0.109489, 0.802743 )
+
+[sub_resource type="ConvexPolygonShape" id=485]
+points = PoolVector3Array( -0.807268, -0.00729927, -1.0073, -0.807268, -0.00729927, 1.0073, -0.807268, 0.109489, -1.0073, -0.807268, 0.109489, 1.0073, -0.486138, -0.00729927, 1.0073, -0.486138, 0.109489, 1.0073, -0.427774, -0.00729927, -1.0073, -0.427774, -0.00729927, 0.802803, -0.427774, 0.109489, -1.0073, -0.427774, 0.109489, 0.802803 )
+
+[sub_resource type="ConvexPolygonShape" id=486]
+points = PoolVector3Array( 0.0832832, -0.00729927, -0.802803, 0.0832832, -0.00729927, 1.0073, 0.0832832, 0.109489, -0.802803, 0.0832832, 0.109489, 1.0073, 0.0978588, -0.00729927, -1.0073, 0.0978588, 0.109489, -1.0073, 0.813139, -0.00729927, -1.0073, 0.813139, -0.00729927, 1.0073, 0.813139, 0.109489, -1.0073, 0.813139, 0.109489, 1.0073 )
 
 [sub_resource type="ConvexPolygonShape" id=45]
 points = PoolVector3Array( -1.51303, 0.626708, 0.683249, -1.51303, 0.626708, 0.802484, -1.51303, 0.88506, 0.663368, -1.51303, 1.00435, 0.663368, -1.51303, 1.00435, 0.802484, -1.39381, 0.626708, 0.683249, -1.39381, 0.626708, 0.802484, -1.39381, 0.88506, 0.663368, -1.39381, 1.00435, 0.663368, -1.37641, 0.997604, 0.8, -1.37393, 0.88506, 0.683249, -1.37393, 0.88506, 0.802484, -1.37393, 1.00435, 0.683249 )
@@ -1411,13 +1504,68 @@ extents = Vector3( 0.110277, 0.557694, 6.9889 )
 [sub_resource type="BoxShape" id=455]
 extents = Vector3( 0.110277, 0.557694, 4.39368 )
 
-[sub_resource type="BoxShape" id=456]
-extents = Vector3( 0.110277, 0.557694, 8.98626 )
+[sub_resource type="BoxShape" id=459]
+extents = Vector3( 0.421486, 0.579495, 1.92365 )
 
 [sub_resource type="BoxShape" id=457]
 extents = Vector3( 0.792561, 0.859427, 14.0186 )
 
+[sub_resource type="BoxShape" id=458]
+extents = Vector3( 0.421486, 0.579495, 8.20512 )
+
+[sub_resource type="BoxShape" id=461]
+extents = Vector3( 0.421486, 2.23909, 0.587211 )
+
+[sub_resource type="BoxShape" id=460]
+extents = Vector3( 0.421486, 0.579495, 4.33803 )
+
+[sub_resource type="BoxShape" id=456]
+extents = Vector3( 0.110277, 0.557694, 8.98626 )
+
+[sub_resource type="BoxShape" id=462]
+extents = Vector3( 0.110277, 0.557694, 5.06603 )
+
+[sub_resource type="BoxShape" id=463]
+extents = Vector3( 0.110277, 0.557694, 1.00422 )
+
+[sub_resource type="BoxShape" id=464]
+extents = Vector3( 0.110277, 0.557694, 1.97489 )
+
+[sub_resource type="BoxShape" id=487]
+extents = Vector3( 0.602186, 0.0683587, 2.06343 )
+
+[sub_resource type="BoxShape" id=488]
+extents = Vector3( 0.602186, 0.0683587, 0.89503 )
+
+[sub_resource type="BoxShape" id=489]
+extents = Vector3( 7.25905, 0.0683587, 0.643486 )
+
+[sub_resource type="BoxShape" id=490]
+extents = Vector3( 7.25905, 0.498643, 0.0796008 )
+
+[sub_resource type="BoxShape" id=491]
+extents = Vector3( 2.04869, 0.151728, 2.04406 )
+
+[sub_resource type="BoxShape" id=492]
+extents = Vector3( 1.51345, 0.117403, 1.54861 )
+
+[sub_resource type="BoxShape" id=493]
+extents = Vector3( 2.15782, 0.117403, 2.05356 )
+
+[sub_resource type="BoxShape" id=494]
+extents = Vector3( 2.15782, 0.976119, 0.152573 )
+
+[sub_resource type="BoxShape" id=495]
+extents = Vector3( 12.2298, 0.734849, 0.152573 )
+
+[sub_resource type="BoxShape" id=496]
+extents = Vector3( 0.0930211, 0.734849, 3.84639 )
+
+[sub_resource type="BoxShape" id=497]
+extents = Vector3( 8.11436, 0.0906424, 2.0511 )
+
 [node name="Room_003" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0304031, 0, -0.000939369 )
 
 [node name="glue_floor_a" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 23 )
@@ -1705,7 +1853,7 @@ mesh = ExtResource( 11 )
 material/0 = ExtResource( 5 )
 
 [node name="glue_floor_a74" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 2, 0, 0, 0, 1, 56, 11, -8.0171 )
+transform = Transform( 1, 0, 0, 0, 1.97395, 0.160863, 0, -0.321726, 0.986977, 56, 11.4673, -8.01094 )
 mesh = ExtResource( 11 )
 material/0 = ExtResource( 5 )
 
@@ -3015,6 +3163,52 @@ transform = Transform( 0.990269, -0.138667, -0.0117411, 0.138554, 0.990305, -0.0
 mesh = ExtResource( 14 )
 material/0 = ExtResource( 5 )
 
+[node name="StaticBody" type="StaticBody" parent="glue_catwalk_a41"]
+
+[node name="CollisionShape11" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 465 )
+
+[node name="CollisionShape10" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 466 )
+
+[node name="CollisionShape9" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 467 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 468 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 469 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 470 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 471 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 472 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 473 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 474 )
+
+[node name="CollisionShape" type="CollisionShape" parent="glue_catwalk_a41/StaticBody"]
+transform = Transform( 1, -5.72618e-09, 0, -6.17729e-09, 1, 0, -9.31323e-10, 9.31323e-10, 1, 0, 0, 0 )
+shape = SubResource( 475 )
+
 [node name="glue_catwalk_railing66" type="MeshInstance" parent="."]
 transform = Transform( 0.995193, 0.0979303, 0, -0.0979303, 0.995193, 0, 0, 0, 1, 35, 13.4781, -11 )
 mesh = ExtResource( 10 )
@@ -3024,6 +3218,52 @@ material/0 = ExtResource( 5 )
 transform = Transform( 0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 35, 13.4781, -13 )
 mesh = ExtResource( 14 )
 material/0 = ExtResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="glue_catwalk_a42"]
+
+[node name="CollisionShape11" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 476 )
+
+[node name="CollisionShape10" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 477 )
+
+[node name="CollisionShape9" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 478 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 479 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 480 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 481 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 482 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 483 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 484 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 485 )
+
+[node name="CollisionShape" type="CollisionShape" parent="glue_catwalk_a42/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 486 )
 
 [node name="glue_catwalk_railing68" type="MeshInstance" parent="."]
 transform = Transform( 0.998769, 0.0495994, 0, -0.0495994, 0.998769, 0, 0, 0, 1, 35, 13.4781, -13 )
@@ -3087,11 +3327,6 @@ material/0 = ExtResource( 5 )
 
 [node name="glue_catwalk_railing41" type="MeshInstance" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17, 13, -5 )
-mesh = ExtResource( 10 )
-material/0 = ExtResource( 5 )
-
-[node name="glue_catwalk_railing42" type="MeshInstance" parent="."]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.1948, 13, -5.28535 )
 mesh = ExtResource( 10 )
 material/0 = ExtResource( 5 )
 
@@ -4613,6 +4848,15 @@ transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 37.4494
 [node name="ConveyorBelt98" parent="." instance=ExtResource( 2 )]
 transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 39.4494, 6.06488, 1.94925 )
 
+[node name="RigidBody_box1" parent="ConveyorBelt98" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.91287, 7.03512, -36.1738 )
+
+[node name="RigidBody_box2" parent="ConveyorBelt98" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3255, 7.03512, -35.5167 )
+
+[node name="RigidBody_box3" parent="ConveyorBelt98" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37614, 7.03512, -39.7184 )
+
 [node name="ConveyorBelt99" parent="." instance=ExtResource( 2 )]
 transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 39.4494, 6.06488, 7.94925 )
 
@@ -5084,7 +5328,7 @@ mesh = ExtResource( 7 )
 material/0 = ExtResource( 5 )
 
 [node name="glue_conveyor_holder36" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, -3.6, 3.14722e-07, 0, -8.74228e-08, -1, 56.1918, 11.1612, -7.85734 )
+transform = Transform( 1, 0, 0, 0, -3.6, 3.14722e-07, 0, -8.74228e-08, -1, 56.1918, 11.6295, -7.85734 )
 mesh = ExtResource( 7 )
 material/0 = ExtResource( 5 )
 
@@ -6732,9 +6976,6 @@ shape = SubResource( 40 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8236, 6.06263, -11.9027 )
 shape = SubResource( 40 )
 
-[node name="Player" parent="." instance=ExtResource( 28 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4344, 6.90492, -4.08555 )
-
 [node name="StaticBody41" type="StaticBody" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody41"]
@@ -6807,14 +7048,636 @@ shape = SubResource( 455 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7832, 14, 10.3883 )
 shape = SubResource( 455 )
 
-[node name="StaticBody53" type="StaticBody" parent="."]
+[node name="StaticBody58" type="StaticBody" parent="."]
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody53"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7832, 14, -4.89821 )
-shape = SubResource( 456 )
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody58"]
+transform = Transform( -3.84655e-08, 0.474995, 0.879989, 2.07627e-08, 0.879989, -0.474995, -1, 0, -4.37114e-08, 37.1446, 11.9234, 5.60442 )
+shape = SubResource( 459 )
 
 [node name="StaticBody54" type="StaticBody" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody54"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2505, 12.8563, 0.0660357 )
 shape = SubResource( 457 )
+
+[node name="StaticBody55" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody55"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 27.7431, 12.8563, 5.60442 )
+shape = SubResource( 458 )
+
+[node name="StaticBody57" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody57"]
+transform = Transform( -4.37108e-08, 0.00539304, 0.999985, 2.35737e-10, 0.999985, -0.00539304, -1, 0, -4.37114e-08, 47.673, 15.4179, 5.60442 )
+shape = SubResource( 461 )
+
+[node name="StaticBody56" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody56"]
+transform = Transform( -4.36786e-08, -0.0387017, 0.999251, -1.69171e-09, 0.999251, 0.0387017, -1, 0, -4.37114e-08, 43.8154, 12.7461, 5.60442 )
+shape = SubResource( 460 )
+
+[node name="StaticBody53" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody53"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7832, 14, -4.89821 )
+shape = SubResource( 456 )
+
+[node name="StaticBody59" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody59"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2655, 13.5818, -1.04691 )
+shape = SubResource( 462 )
+
+[node name="StaticBody60" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody60"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.0162, 13.5818, 4.20728 )
+shape = SubResource( 462 )
+
+[node name="StaticBody61" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody61"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.0162, 13.5818, 5.72652 )
+shape = SubResource( 462 )
+
+[node name="StaticBody62" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody62"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.77044, 13.5818, 2.99098 )
+shape = SubResource( 463 )
+
+[node name="StaticBody63" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody63"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.77044, 13.5818, -3.96017 )
+shape = SubResource( 464 )
+
+[node name="StaticBody64" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody64"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5098, 10.5722, 0.0114303 )
+shape = SubResource( 464 )
+
+[node name="StaticBody65" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody65"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.73531, 10.0419, 0.0114303 )
+shape = SubResource( 487 )
+
+[node name="StaticBody66" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody66"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 30.0119, 8.05012, 0.0114307 )
+shape = SubResource( 487 )
+
+[node name="StaticBody67" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody67"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 30.0119, 8.05012, 11.9959 )
+shape = SubResource( 487 )
+
+[node name="StaticBody68" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody68"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 53.0488, 10.0763, 12.4197 )
+shape = SubResource( 488 )
+
+[node name="StaticBody69" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody69"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 53.2061, 12.9321, 1.42999 )
+shape = SubResource( 489 )
+
+[node name="StaticBody70" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody70"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 52.6312, 13.464, 1.42999 )
+shape = SubResource( 490 )
+
+[node name="StaticBody71" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody71"]
+transform = Transform( -4.37114e-08, 0, -1, 0.160863, 0.986977, -7.03155e-09, 0.986977, -0.160863, -4.31421e-08, 56.0353, 11.5444, -8.00421 )
+shape = SubResource( 491 )
+
+[node name="StaticBody72" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody72"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 56.0353, 10.0997, -12.0287 )
+shape = SubResource( 492 )
+
+[node name="StaticBody73" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody73"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.0315, 10.9805, -12.0287 )
+shape = SubResource( 492 )
+
+[node name="StaticBody74" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody74"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 43.9977, 10.0145, -12.0287 )
+shape = SubResource( 492 )
+
+[node name="StaticBody75" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody75"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 43.9977, 9.00094, -16.0223 )
+shape = SubResource( 492 )
+
+[node name="StaticBody76" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody76"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 40.0132, 8.04613, -16.0223 )
+shape = SubResource( 492 )
+
+[node name="StaticBody77" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody77"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 40.0132, 7.02479, -12.0029 )
+shape = SubResource( 492 )
+
+[node name="StaticBody78" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody78"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 52.0364, 9.08873, -12.0029 )
+shape = SubResource( 493 )
+
+[node name="StaticBody79" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody79"]
+transform = Transform( -4.37114e-08, 0, -1, -0.259696, 0.965691, 1.13517e-08, 0.965691, 0.259696, -4.22117e-08, 35.7696, 5.4652, -8.04182 )
+shape = SubResource( 493 )
+
+[node name="StaticBody80" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody80"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 33.9809, 6.02794, -8.04182 )
+shape = SubResource( 494 )
+
+[node name="StaticBody81" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody81"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 33.9809, 4.32636, 1.8995 )
+shape = SubResource( 495 )
+
+[node name="StaticBody82" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody82"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 25.9636, 4.32636, 1.8995 )
+shape = SubResource( 495 )
+
+[node name="StaticBody83" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody83"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 9.71409, 7.48656, 10.2789 )
+shape = SubResource( 496 )
+
+[node name="StaticBody84" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody84"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 9.71409, 7.48656, -10.2464 )
+shape = SubResource( 496 )
+
+[node name="StaticBody85" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody85"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 56.022, 13.0191, 2.02374 )
+shape = SubResource( 497 )
+
+[node name="RigidBody_drawers" parent="." instance=ExtResource( 32 )]
+transform = Transform( 0.38128, 0, 0.92446, 0, 1, 0, -0.92446, 0, 0.38128, 2.63724, 13.1, 1.32172 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.492651, 0.304973, -0.815037, 0, 0.93658, 0.350453, 0.870227, -0.172651, 0.461408, 22.2557, 13.0908, 10.912 )
+current = true
+
+[node name="RigidBody_cinnamon_roll" parent="." instance=ExtResource( 29 )]
+transform = Transform( 0.38128, 0, 0.92446, 0, 1, 0, -0.92446, 0, 0.38128, 2.63855, 13.9481, 1.4749 )
+
+[node name="RigidBody_fridge" parent="." instance=ExtResource( 30 )]
+transform = Transform( 0.38128, 0, 0.92446, 0, 1, 0, -0.92446, 0, 0.38128, 4.51859, 13.1, -2.02141 )
+
+[node name="RigidBody_lightbulb" parent="." instance=ExtResource( 31 )]
+transform = Transform( 0.0133929, -0.999383, 0.0324726, 0.381045, 0.0351261, 0.923889, -0.92446, -2.98023e-08, 0.38128, 4.80423, 13.4121, -3.03801 )
+
+[node name="RigidBody_bowl1" parent="." instance=ExtResource( 47 )]
+transform = Transform( 0.830069, -0.0363327, -0.556476, 0.0198682, 0.999169, -0.0355999, 0.557307, 0.0184942, 0.830101, 4.51103, 7.14975, 2.59773 )
+
+[node name="RigidBody_chair" parent="." instance=ExtResource( 36 )]
+transform = Transform( 0.830069, -0.0363327, -0.556476, 0.0198682, 0.999169, -0.0355999, 0.557307, 0.0184942, 0.830101, 9.88454, 10.1, -1.47041 )
+
+[node name="RigidBody_bowl2" parent="." instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.14438, 7.1, 3.02037 )
+
+[node name="RigidBody_cake" parent="." instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.491828, 7.1, 5.48934 )
+
+[node name="RigidBody_book2" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0617638, 7.14975, 3.28147 )
+
+[node name="RigidBody_book1" parent="." instance=ExtResource( 40 )]
+transform = Transform( 0.757724, 0, -0.652575, 0, 1, 0, 0.652575, 0, 0.757724, 0.0519099, 7.49949, 3.46585 )
+
+[node name="RigidBody_book3" parent="." instance=ExtResource( 38 )]
+transform = Transform( -0.937671, 0, 0.347525, 0, 1, 0, -0.347525, 0, -0.937671, -0.890508, 7.14975, 2.94176 )
+
+[node name="RigidBody_box1" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.35935, 7.1, 0.686529 )
+
+[node name="RigidBody_box2" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.82462, 0, 0.565687, 0, 1, 0, -0.565687, 0, 0.82462, 2.29891, 7.76498, 0.637596 )
+
+[node name="RigidBody_box3" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.954678, 0, 0.297641, 0, 1, 0, -0.297641, 0, 0.954678, 1.48277, 7.1, 0.394036 )
+
+[node name="RigidBody_bowl3" parent="." instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.07032, 7.1, 5.48433 )
+
+[node name="RigidBody_chair2" parent="." instance=ExtResource( 36 )]
+transform = Transform( -0.663313, 0, 0.748342, 0, 1, 0, -0.748342, 0, -0.663313, -0.288453, 7.1, 2.24517 )
+
+[node name="RigidBody_dino" parent="." instance=ExtResource( 42 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.12272, 7.1, 1.19438 )
+
+[node name="RigidBody_box4" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.907873, 0, -0.419246, 0, 1, 0, 0.419246, 0, 0.907873, -1.04246, 7.1, -3.59801 )
+
+[node name="RigidBody_box5" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.952831, 0, -0.303501, 0, 1, 0, 0.303501, 0, 0.952831, -0.316828, 7.1, -4.3423 )
+
+[node name="RigidBody_box6" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.108147, 7.1, -3.24594 )
+
+[node name="RigidBody_box7" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.790454, 0, 0.612521, 0, 1, 0, -0.612521, 0, 0.790454, 1.36949, 7.1, -4.20537 )
+
+[node name="RigidBody_cake2" parent="." instance=ExtResource( 44 )]
+transform = Transform( 0.612548, 0, 0.790433, 0, 1, 0, -0.790433, 0, 0.612548, 4.70196, 8.00655, 8.25955 )
+
+[node name="RigidBody_fox" parent="." instance=ExtResource( 49 )]
+transform = Transform( 0.612548, 0, 0.790433, 0, 1, 0, -0.790433, 0, 0.612548, 3.88674, 8.00655, 9.15485 )
+
+[node name="RigidBody_box8" parent="." instance=ExtResource( 34 )]
+transform = Transform( -0.753449, 0, 0.657507, 0, 1, 0, -0.657507, 0, -0.753449, 0.750056, 7.1, -2.64811 )
+
+[node name="RigidBody_bowl4" parent="." instance=ExtResource( 48 )]
+transform = Transform( 0.782162, 0, -0.623074, 0, 1, 0, 0.623074, 0, 0.782162, 4.34899, 7.1, -3.94741 )
+
+[node name="RigidBody_book4" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.94754, 7.14975, -2.88329 )
+
+[node name="RigidBody_apple" parent="." instance=ExtResource( 45 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.90266, 7.44975, -2.95128 )
+
+[node name="RigidBody_minihouse" parent="." instance=ExtResource( 39 )]
+transform = Transform( -0.671863, 0, 0.740675, 0, 1, 0, -0.740675, 0, -0.671863, -0.406911, 7.1, -8.09524 )
+
+[node name="RigidBody_fridge2" parent="." instance=ExtResource( 30 )]
+transform = Transform( 0.481065, 0, 0.876685, 0, 1, 0, -0.876685, 0, 0.481065, 5.05315, 7.1, -7.98037 )
+
+[node name="RigidBody_lightbulb2" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.853266, 7.76498, -2.77843 )
+
+[node name="RigidBody_mug" parent="." instance=ExtResource( 43 )]
+transform = Transform( 0.668014, 0, 0.744148, 0, 1, 0, -0.744148, 0, 0.668014, 5.15218, 8.6, -7.89128 )
+
+[node name="RigidBody_peach" parent="." instance=ExtResource( 41 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.335102, 7.24664, -9.02439 )
+
+[node name="RigidBody_plum" parent="." instance=ExtResource( 46 )]
+transform = Transform( -0.779119, 0, 0.626876, 0, 1, 0, -0.626876, 0, -0.779119, 1.43117, 7.3792, -9.11658 )
+
+[node name="RigidBody_flowerpot" parent="." instance=ExtResource( 50 )]
+transform = Transform( 0.761052, 0, -0.648691, 0, 1, 0, 0.648691, 0, 0.761052, -0.859396, 7.1, -13.0306 )
+
+[node name="RigidBody_mcgrass" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.02986, 7.1, 9.40533 )
+
+[node name="RigidBody_mcgrass2" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.91388, 7.1, 9.07748 )
+
+[node name="RigidBody_mcgrass4" parent="." instance=ExtResource( 52 )]
+transform = Transform( 0.948606, 0, -0.31646, 0, 1, 0, 0.31646, 0, 0.948606, 3.30587, 7.1, 7.97466 )
+
+[node name="RigidBody_mcgrass5" parent="." instance=ExtResource( 52 )]
+transform = Transform( 0.979265, 0, 0.202582, 0, 1, 0, -0.202582, 0, 0.979265, 4.89229, 7.10393, 6.93383 )
+
+[node name="RigidBody_mcgrass3" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.80986, 7.1, 8.32279 )
+
+[node name="RigidBody_monitor" parent="." instance=ExtResource( 51 )]
+transform = Transform( -0.758594, 0.0024655, 0.651559, 0.00165381, 0.999997, -0.00185851, -0.651562, -0.000332314, -0.758595, 4.82128, 8, 9.33436 )
+
+[node name="RigidBody_strawberry_cake" parent="." instance=ExtResource( 28 )]
+transform = Transform( -0.991832, 0, 0.127549, 0, 1, 0, -0.127549, 0, -0.991832, 11.7483, 7.1, 12.8996 )
+
+[node name="RigidBody_drawers2" parent="." instance=ExtResource( 32 )]
+transform = Transform( 0.900607, 0, -0.434634, 0, 1, 0, 0.434634, 0, 0.900607, 15.5223, 7.1, 12.9779 )
+
+[node name="RigidBody_cinnamon_roll2" parent="." instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.47022, 7.14808, 11.1011 )
+
+[node name="RigidBody_cinnamon_roll3" parent="." instance=ExtResource( 29 )]
+transform = Transform( 0.351466, 0, -0.936201, 0, 1, 0, 0.936201, 0, 0.351466, 6.83886, 7.14808, 13.3898 )
+
+[node name="RigidBody_lightbulb3" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4596, 7.1, -13.434 )
+
+[node name="RigidBody_lightbulb4" parent="." instance=ExtResource( 31 )]
+transform = Transform( 0.937495, 0, -0.347999, 0, 1, 0, 0.347999, 0, 0.937495, 12.0885, 7.1, -13.2548 )
+
+[node name="RigidBody_lightbulb5" parent="." instance=ExtResource( 31 )]
+transform = Transform( 0.914699, 0, 0.404136, 0, 1, 0, -0.404136, 0, 0.914699, 9.44139, 7.1, -12.4089 )
+
+[node name="RigidBody_lightbulb6" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.3361, 7.1, -11.8179 )
+
+[node name="RigidBody_lightbulb7" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.17898, 7.1, -13.3395 )
+
+[node name="RigidBody_lightbulb8" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9736, 7.60505, -11.7659 )
+
+[node name="RigidBody_flowerpot2" parent="." instance=ExtResource( 50 )]
+transform = Transform( 0.871342, 0, 0.490676, 0, 1, 0, -0.490676, 0, 0.871342, 16.1167, 5.1, -3.36426 )
+
+[node name="RigidBody_minihouse2" parent="." instance=ExtResource( 39 )]
+transform = Transform( 0.75033, 0, 0.661063, 0, 1, 0, -0.661063, 0, 0.75033, 13.6047, 5.1, -2.99249 )
+
+[node name="RigidBody_box9" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.414, 5.07248, -7.38716 )
+
+[node name="RigidBody_box10" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.751713, 0, 0.65949, 0, 1, 0, -0.65949, 0, 0.751713, 13.7049, 5.07248, -6.63948 )
+
+[node name="RigidBody_box11" parent="." instance=ExtResource( 33 )]
+transform = Transform( -0.5953, 0, -0.803504, 0, 1, 0, 0.803504, 0, -0.5953, 16.4783, 5.07248, -6.68987 )
+
+[node name="RigidBody_box12" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9696, 5.07248, -7.65206 )
+
+[node name="RigidBody_bowl5" parent="." instance=ExtResource( 47 )]
+transform = Transform( 0.925699, 0, 0.378261, 0, 1, 0, -0.378261, 0, 0.925699, 19.1757, 5.14974, -3.13099 )
+
+[node name="RigidBody_box13" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.848455, 0, -0.529268, 0, 1, 0, 0.529268, 0, 0.848455, 21.1801, 5.1, -3.3686 )
+
+[node name="RigidBody_box14" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.948677, 0, 0.316245, 0, 1, 0, -0.316245, 0, 0.948677, 21.6653, 5.1, -4.21506 )
+
+[node name="RigidBody_box15" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0922, 5.1, -0.417243 )
+
+[node name="RigidBody_box16" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.844, 5.1, -6.69485 )
+
+[node name="RigidBody_box17" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.031, 4.125, -8.03322 )
+
+[node name="RigidBody_box18" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4636, 4.125, -6.12682 )
+
+[node name="RigidBody_box19" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8304, 4.125, -4.44099 )
+
+[node name="RigidBody_bowl6" parent="." instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9095, 4.125, -3.21728 )
+
+[node name="RigidBody_box20" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0329, 4.125, -8.20071 )
+
+[node name="RigidBody_box21" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2703, 4.125, -6.40329 )
+
+[node name="RigidBody_box22" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2379, 4.125, -3.61538 )
+
+[node name="RigidBody_chair3" parent="." instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2145, 4.125, 1.81513 )
+
+[node name="RigidBody_book5" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.7791, 4.17475, 3.97256 )
+
+[node name="RigidBody_book6" parent="." instance=ExtResource( 38 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2461, 4.17475, 2.74551 )
+
+[node name="RigidBody_cake3" parent="." instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4423, 4.125, -0.412477 )
+
+[node name="RigidBody_book7" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.4861, 4.22241, 10.1774 )
+
+[node name="RigidBody_book8" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.9429, 4.17475, 7.09343 )
+
+[node name="RigidBody_apple2" parent="." instance=ExtResource( 45 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.5925, 4.125, 8.36191 )
+
+[node name="RigidBody_box23" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6693, 4.125, 8.16646 )
+
+[node name="RigidBody_box24" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.976239, 0, 0.216695, 0, 1, 0, -0.216695, 0, 0.976239, 27.6738, 4.125, 8.21172 )
+
+[node name="RigidBody_box25" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2646, 4.125, 12.0451 )
+
+[node name="RigidBody_bowl7" parent="." instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.6376, 4.17475, 6.112 )
+
+[node name="RigidBody_box26" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.969067, 0, -0.246796, 0, 1, 0, 0.246796, 0, 0.969067, 31.2026, 4.125, 4.71689 )
+
+[node name="RigidBody_box27" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4147, 4.67512, 11.6559 )
+
+[node name="RigidBody_box28" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5096, 6.1, -12.659 )
+
+[node name="RigidBody_box29" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.4681, 6.1, -12.4144 )
+
+[node name="RigidBody_box30" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.5487, 6.1, -10.5956 )
+
+[node name="RigidBody_chair4" parent="." instance=ExtResource( 36 )]
+transform = Transform( 0.928939, 0, -0.370233, 0, 1, 0, 0.370233, 0, 0.928939, 25.1977, 5.1, -12.9997 )
+
+[node name="RigidBody_cake4" parent="." instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.18, 5.1, -12.8677 )
+
+[node name="RigidBody_cinnamon_roll4" parent="." instance=ExtResource( 29 )]
+transform = Transform( -0.124277, 0, -0.992248, 0, 1, 0, 0.992248, 0, -0.124277, 25.2668, 5.14808, -10.5685 )
+
+[node name="RigidBody_cinnamon_roll5" parent="." instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5563, 5.14808, -10.8637 )
+
+[node name="RigidBody_book9" parent="." instance=ExtResource( 40 )]
+transform = Transform( -0.712822, 0, 0.701345, 0, 1, 0, -0.701345, 0, -0.712822, 24.5239, 5.14975, 7.93414 )
+
+[node name="RigidBody_book10" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.2991, 5.14975, 7.40338 )
+
+[node name="RigidBody_book11" parent="." instance=ExtResource( 38 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.6153, 5.14975, 6.78755 )
+
+[node name="RigidBody_book12" parent="." instance=ExtResource( 53 )]
+transform = Transform( 0.872811, 0, -0.488058, 0, 1, 0, 0.488058, 0, 0.872811, 24.6915, 5.49949, 7.0316 )
+
+[node name="RigidBody_minihouse3" parent="." instance=ExtResource( 39 )]
+transform = Transform( 0.937343, 0, -0.348408, 0, 1, 0, 0.348408, 0, 0.937343, 23.22, 5.1, 5.46996 )
+
+[node name="RigidBody_sprinkle_cake" parent="." instance=ExtResource( 54 )]
+transform = Transform( -0.895859, 0, -0.444338, 0, 1, 0, 0.444338, 0, -0.895859, 22.6646, 5.1, 1.82724 )
+
+[node name="RigidBody_sprinkle_cake2" parent="." instance=ExtResource( 54 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.7432, 5.1, 9.69494 )
+
+[node name="RigidBody_box31" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.817054, 0, 0.576561, 0, 1, 0, -0.576561, 0, 0.817054, 35.0566, 5.1, 3.57513 )
+
+[node name="RigidBody_box32" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.1817, 5.1, 4.96644 )
+
+[node name="RigidBody_box33" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.1567, 5.09998, -0.256631 )
+
+[node name="RigidBody_box34" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.73969, 0, 0.672948, 0, 1, 0, -0.672948, 0, 0.73969, 41.8165, 5.1, 0.299853 )
+
+[node name="RigidBody_box35" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.0803, 5.1, -2.47791 )
+
+[node name="RigidBody_box36" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.931456, 0, 0.363853, 0, 1, 0, -0.363853, 0, 0.931456, 48.6353, 5.1, -2.85677 )
+
+[node name="RigidBody_box37" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.6149, 5.1, -2.95415 )
+
+[node name="RigidBody_box38" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.879125, 0, -0.476591, 0, 1, 0, 0.476591, 0, 0.879125, 48.7241, 5.1, -1.112 )
+
+[node name="RigidBody_box39" parent="." instance=ExtResource( 34 )]
+transform = Transform( -0.113602, 0, 0.993526, 0, 1, 0, -0.993526, 0, -0.113602, 48.2325, 5.1, 6.22418 )
+
+[node name="RigidBody_box40" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.6075, 5.1, 4.90346 )
+
+[node name="RigidBody_book13" parent="." instance=ExtResource( 40 )]
+transform = Transform( -0.990828, 0, 0.135127, 0, 1, 0, -0.135127, 0, -0.990828, 50.9511, 5.14975, 11.5435 )
+
+[node name="RigidBody_book14" parent="." instance=ExtResource( 37 )]
+transform = Transform( -0.279595, 0, 0.960118, 0, 1, 0, -0.960118, 0, -0.279595, 51.936, 5.14975, 12.069 )
+
+[node name="RigidBody_box41" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52.0314, 5.1, 9.45561 )
+
+[node name="RigidBody_box42" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.15852, 0, -0.987356, 0, 1, 0, 0.987356, 0, 0.15852, 51.3915, 5.1, 10.1304 )
+
+[node name="RigidBody_box43" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.2306, 5.1, 9.39464 )
+
+[node name="RigidBody_box44" parent="." instance=ExtResource( 34 )]
+transform = Transform( -0.997416, 0, 0.0718455, 0, 1, 0, -0.0718455, 0, -0.997416, 35.5561, 5.1, -2.40326 )
+
+[node name="RigidBody_box47" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.4398, 13.1, -5.09845 )
+
+[node name="RigidBody_box48" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.974932, 0, 0.222502, 0, 1, 0, -0.222502, 0, 0.974932, 57.0175, 13.1, -5.07703 )
+
+[node name="RigidBody_box50" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.949885, 0, -0.3126, 0, 1, 0, 0.3126, 0, 0.949885, 54.5944, 13.765, -5.03714 )
+
+[node name="RigidBody_box45" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.627066, 0, -0.778966, 0, 1, 0, 0.778966, 0, 0.627066, 54.8579, 13.1, 8.89803 )
+
+[node name="RigidBody_box46" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.949612, 0, 0.313429, 0, 1, 0, -0.313429, 0, 0.949612, 55.7283, 13.1, 8.06944 )
+
+[node name="RigidBody_box49" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.0884, 13.1, 7.71107 )
+
+[node name="RigidBody_box51" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.559453, 0, -0.828862, 0, 1, 0, 0.828862, 0, 0.559453, 35.0468, 13.5606, 5.59699 )
+
+[node name="RigidBody_box52" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.960508, 0, -0.278254, 0, 1, 0, 0.278254, 0, 0.960508, 35.2593, 13.5781, 3.51818 )
+
+[node name="RigidBody_box53" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2463, 13.1, -12.3925 )
+
+[node name="RigidBody_box54" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.9998, 13.1, -11.3219 )
+
+[node name="RigidBody_box55" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.2678, 13.1, -10.5124 )
+
+[node name="RigidBody_box56" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.4376, 13.1, -10.5518 )
+
+[node name="RigidBody_box57" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.3264, 13.765, -12.5465 )
+
+[node name="RigidBody_box58" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0659, 13.765, -11.4992 )
+
+[node name="RigidBody_box59" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6321, 13.1, -12.7264 )
+
+[node name="RigidBody_box60" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2153, 13.1, -11.2852 )
+
+[node name="RigidBody_box61" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.1998, 13.765, -11.3583 )
+
+[node name="RigidBody_box62" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.3418, 13.1, -11.691 )
+
+[node name="RigidBody_box63" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8543, 13.1, -5.26489 )
+
+[node name="RigidBody_book15" parent="." instance=ExtResource( 53 )]
+transform = Transform( 0.867913, 0, -0.496716, 0, 1, 0, 0.496716, 0, 0.867913, 16.9258, 13.8147, -5.33693 )
+
+[node name="RigidBody_apple3" parent="." instance=ExtResource( 45 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1514, 14.1147, -5.32344 )
+
+[node name="RigidBody_bowl8" parent="." instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9448, 13.1658, 5.31282 )
+
+[node name="RigidBody_apple4" parent="." instance=ExtResource( 45 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.36019, 13.1, 5.47236 )
+
+[node name="RigidBody_box64" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.174731, 0, 0.984616, 0, 1, 0, -0.984616, 0, 0.174731, 7.966, 5.07248, 2.3818 )
+
+[node name="RigidBody_box65" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.757508, 0, 0.652826, 0, 1, 0, -0.652826, 0, 0.757508, 7.01648, 5.07248, 3.31913 )
+
+[node name="RigidBody_box66" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8983, 5.07248, 3.54255 )
+
+[node name="RigidBody_box67" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.804438, 0, 0.594037, 0, 1, 0, -0.594037, 0, 0.804438, 19.0004, 5.1, 12.4468 )
+
+[node name="RigidBody_box68" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.821269, 0, 0.570542, 0, 1, 0, -0.570542, 0, 0.821269, 19.8945, 5.1, 12.7555 )
+
+[node name="RigidBody_box69" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.832312, 0, -0.554307, 0, 1, 0, 0.554307, 0, 0.832312, 18.7583, 5.1, 10.209 )
+
+[node name="RigidBody_trophy" parent="." instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8159, 7.1, 11.6882 )
+
+[node name="RigidBody_trophy2" parent="." instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.4473, 5.1, 0.37428 )
+
+[node name="RigidBody_monitor2" parent="." instance=ExtResource( 51 )]
+transform = Transform( -0.902698, 0, -0.430275, 0, 1, 0, 0.430275, 0, -0.902698, 24.6555, 5.1, -8.64712 )
+
+[node name="RigidBody_mcgrass6" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.8327, 5.1, -7.48046 )
