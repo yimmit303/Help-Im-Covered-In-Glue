@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_trophy.obj-14a0c77266ca76020f826c12365c1990.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_trophy.obj-14a0c77266ca76020f826c12365c1990.mesh" ]
+
+source_file="res://Level/Objects/glue_trophy.obj"
+dest_files=[ "res://.import/glue_trophy.obj-14a0c77266ca76020f826c12365c1990.mesh", "res://.import/glue_trophy.obj-14a0c77266ca76020f826c12365c1990.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
