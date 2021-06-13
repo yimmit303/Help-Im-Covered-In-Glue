@@ -37,5 +37,8 @@ shape = SubResource( 3 )
 [node name="CollisionShape3" type="CollisionShape" parent="Conveyor_Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05865, 0.648 )
 shape = SubResource( 3 )
+
+[node name="Direction" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.5 )
 [connection signal="body_entered" from="Conveyor_Area" to="." method="_on_Conveyor_Area_body_entered"]
 [connection signal="body_exited" from="Conveyor_Area" to="." method="_on_Conveyor_Area_body_exited"]

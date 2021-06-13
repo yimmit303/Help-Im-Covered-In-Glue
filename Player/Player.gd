@@ -12,7 +12,6 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	leg = get_node("leg_Body")
 	body = get_node("body_Body")
-	pass # Replace with function body.
 
 func _input(event):
 	if event is InputEventKey and event.pressed and event.is_echo() == false and event.get_scancode() == KEY_SPACE and stuck:
@@ -20,4 +19,5 @@ func _input(event):
 		var jump_direction = (get_node("leg_Body/Jump_Target").get_global_transform().origin - get_node("leg_Body").get_global_transform().origin).normalized()
 		leg.impulse_queue.append([Vector3(0, 0, 0), jump_direction * 1 * JUMP_FORCE])
 		body.impulse_queue.append([Vector3(0, 0, 0), jump_direction * -1 * JUMP_FORCE])
-	
+	if event is InputEventKey and event.pressed and event.is_echo() == false and event.get_scancode() == KEY_ESCAPE:
+		get_tree().quit()

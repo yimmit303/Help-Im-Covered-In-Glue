@@ -1,0 +1,22 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = -2.95227
+margin_top = -62.2309
+margin_right = 203.048
+margin_bottom = 84.7691
+rect_scale = Vector2( 5, 5 )
+text = "YOU WIN!!!!!!!!!
+Now get back to work!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.5, 0.5 )

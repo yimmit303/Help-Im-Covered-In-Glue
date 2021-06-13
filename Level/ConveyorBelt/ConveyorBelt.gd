@@ -4,7 +4,7 @@ var bodys_on = []
 export var force = Vector3(0,0,10)
 
 func _ready():
-	force = force.rotated(Vector3(0, 1, 0), deg2rad(self.rotation_degrees.y))
+	force = ($Direction.get_global_transform().origin - self.global_transform.origin).normalized() * 10
 	
 
 func _process(delta):
