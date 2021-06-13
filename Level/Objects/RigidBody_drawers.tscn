@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Level/Objects/glue_drawers.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.505623, 0.397493, 0.360719 )
+
+[node name="RigidBody_drawers" type="RigidBody"]
+mass = 3.0
+linear_damp = 1.0
+angular_damp = 1.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000938565, 0.401177, 0.0488014 )
+shape = SubResource( 1 )
+
+[node name="glue_drawers" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null

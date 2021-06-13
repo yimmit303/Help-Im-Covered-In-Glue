@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Level/Objects/glue_dino.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.478666
+height = 0.744213
+
+[node name="RigidBody_dino" type="RigidBody"]
+mass = 0.25
+linear_damp = 1.0
+angular_damp = 1.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000938565, 0.401177, -0.00326511 )
+shape = SubResource( 1 )
+
+[node name="glue_dino" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Level/Objects/glue_plum.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="SphereShape" id=1]
+radius = 0.408717
+
+[node name="RigidBody_plum" type="RigidBody"]
+linear_damp = 1.0
+angular_damp = 1.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.334621, 0 )
+shape = SubResource( 1 )
+
+[node name="glue_plum" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null

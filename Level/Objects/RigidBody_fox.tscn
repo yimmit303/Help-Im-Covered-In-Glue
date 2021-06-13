@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Level/Objects/glue_fox.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Resources/BaseSpatial.tres" type="Material" id=2]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.405781
+height = 0.577696
+
+[node name="RigidBody_fox" type="RigidBody"]
+mass = 0.25
+linear_damp = 1.0
+angular_damp = 1.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000938565, 0.279736, 0.0488014 )
+shape = SubResource( 1 )
+
+[node name="glue_fox" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )
