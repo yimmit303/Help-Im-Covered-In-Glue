@@ -23,8 +23,6 @@ func _process(delta):
 func hit_something(body):
 	if body is RigidBody and not stuck_to_something and not on_cooldown and not body.is_in_group("body_part"):
 		stuck_to_something = true
-		print("I'm " + self.name)
-		print("That's stickable " + body.name)
 		var new_joint = ConeTwistJoint.new()
 		new_joint.name = self.name + "_pin_joint"
 		new_joint.set_script(load("Player/leg_attachment.gd"))
