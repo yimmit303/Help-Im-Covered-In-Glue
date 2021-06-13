@@ -24,15 +24,19 @@ func _ready():
 
 func _integrate_forces(state):
 	for impulse in impulse_queue:
-		print("Jumping!!!")
+#		print("Jumping!!!")
+#		get_node("../leg_attachment").detach()
 		self.apply_impulse(impulse[0], impulse[1])
 	impulse_queue.clear()
 
 func _on_leg_Body_body_entered(body):
 	if body is StaticBody:
-		print("Stuck!")
+#		print("Stuck!")
 		get_parent().stuck = true
-#		get_node("../leg_attachment").set("nodes/node_a", self)
-#		get_node("../leg_attachment").set("nodes/node_b", body)
+#		var new_joint = ConeTwistJoint.new()
+#		new_joint.name = "leg_attachment"
+#		new_joint.set_script(load("Player/leg_attachment.gd"))
+#		get_parent().add_child(new_joint)
+#		get_node("../leg_attachment").attach_to(self, body)
 		
 	

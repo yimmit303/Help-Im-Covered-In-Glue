@@ -1,15 +1,16 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Player/Leg.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Player/Camera.gd" type="Script" id=3]
 [ext_resource path="res://Player/glue_head.obj" type="ArrayMesh" id=4]
 [ext_resource path="res://Player/glue_body.obj" type="ArrayMesh" id=5]
-[ext_resource path="res://Player/player_arm.gd" type="Script" id=6]
+[ext_resource path="res://Player/handR_body.gd" type="Script" id=6]
 [ext_resource path="res://Player/Camera_Look_to.gd" type="Script" id=7]
 [ext_resource path="res://Player/glue_leg.obj" type="ArrayMesh" id=8]
 [ext_resource path="res://Player/body_temp.gd" type="Script" id=9]
 [ext_resource path="res://Player/Debug_Draw.gd" type="Script" id=10]
+[ext_resource path="res://Player/sticky_part.gd" type="Script" id=11]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.15, 0.15, 0.15 )
@@ -35,9 +36,14 @@ extents = Vector3( 0.05, 0.15, 0.05 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00242007, 1.19209e-07, -0.00091207 )
 script = ExtResource( 2 )
 
-[node name="head_Body" type="RigidBody" parent="."]
+[node name="head_Body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.8, -0.05 )
 gravity_scale = 0.5
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 11 )
 
 [node name="CollisionShape" type="CollisionShape" parent="head_Body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0 )
@@ -55,12 +61,13 @@ nodes/node_b = NodePath("../body_Body")
 swing_span = 12.0
 twist_span = 0.0
 
-[node name="body_Body" type="RigidBody" parent="."]
+[node name="body_Body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.525, -0.05 )
 gravity_scale = 0.5
-axis_lock_angular_y = true
 linear_damp = 1.0
-angular_damp = 5.0
+angular_damp = 10.0
 script = ExtResource( 9 )
 debugger_path = NodePath("../Debug_Overlay/Debug_Draw")
 
@@ -84,12 +91,12 @@ linear_limit_z/upper_distance = 0.125
 linear_limit_z/lower_distance = -0.1
 angular_limit_z/lower_angle = -70.82
 
-[node name="armL_body" type="RigidBody" parent="."]
+[node name="armL_body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.324545, 0.65, -0.048 )
 mass = 0.01
 gravity_scale = 0.5
-script = ExtResource( 6 )
-debugger_path = NodePath("../Debug_Overlay/Debug_Draw")
 
 [node name="shoulder" type="Position3D" parent="armL_body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0, 0 )
@@ -114,10 +121,15 @@ nodes/node_b = NodePath("../armL_body")
 angular_limit_z/upper_angle = 76.72
 angular_limit_z/lower_angle = -76.72
 
-[node name="handL_body" type="RigidBody" parent="."]
+[node name="handL_body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.474545, 0.65, -0.05 )
 mass = 0.01
 gravity_scale = 0.5
+contacts_reported = 3
+contact_monitor = true
+script = ExtResource( 11 )
 
 [node name="CollisionShape" type="CollisionShape" parent="handL_body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.103326, 0.00021714, 0 )
@@ -137,12 +149,12 @@ linear_limit_z/lower_distance = -0.1
 angular_limit_z/upper_angle = 74.17
 angular_limit_z/lower_angle = -70.82
 
-[node name="armR_body" type="RigidBody" parent="."]
+[node name="armR_body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.251324, 0.65, -0.057 )
 mass = 0.01
 gravity_scale = 0.5
-script = ExtResource( 6 )
-debugger_path = NodePath("../Debug_Overlay/Debug_Draw")
 
 [node name="shoulder" type="Position3D" parent="armR_body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0, 0 )
@@ -167,10 +179,15 @@ nodes/node_b = NodePath("../armR_body")
 angular_limit_z/upper_angle = 76.72
 angular_limit_z/lower_angle = -76.72
 
-[node name="handR_body" type="RigidBody" parent="."]
+[node name="handR_body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.401324, 0.65, -0.055 )
 mass = 0.01
 gravity_scale = 0.5
+contacts_reported = 3
+contact_monitor = true
+script = ExtResource( 6 )
 
 [node name="CollisionShape" type="CollisionShape" parent="handR_body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.103326, 0.00021714, 0 )
@@ -189,7 +206,9 @@ linear_limit/upper_distance = 0.15
 linear_limit/lower_distance = -0.1
 linear_limit/restitution = 2.53
 
-[node name="leg_Body" type="RigidBody" parent="."]
+[node name="leg_Body" type="RigidBody" parent="." groups=[
+"body_part",
+]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, -0.05 )
 physics_material_override = SubResource( 4 )
 gravity_scale = 0.5
@@ -213,9 +232,6 @@ disabled = true
 [node name="CollisionShape2" type="CollisionShape" parent="leg_Body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0 )
 shape = SubResource( 6 )
-
-[node name="leg_attachment" type="PinJoint" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, -0.05 )
 
 [node name="Camera_Look_to" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0246119, 0.480274, 0 )

@@ -9,7 +9,6 @@ func _ready():
 func _process(delta):
 	var offset = get_node("../body_Body").get_global_transform().origin - self.get_global_transform().origin
 	self.translation += offset * 0.1
-	print(offset)
 
 func _input(event):
 	if event is InputEventMouseMotion:

@@ -11,7 +11,8 @@ var righting_direction
 var righting_force
 var RIGHTING_STRENGTH = 50
 
-var AIM_STRENGTH = 10
+var AIM_STRENGTH = 5
+var AIM_STRENGTH_SCALE = 1.0
 
 func _ready():
 	var debugger = get_node(debugger_path)
@@ -25,6 +26,7 @@ func _ready():
 #	debugger.vectors.append(debugger.Vector.new(self, "gravity_force", 1.0, 2.0, Color(1, 1, 0, 1)))
 
 func _integrate_forces(state):
+	AIM_STRENGTH_SCALE = 1.0
 	if get_parent().stuck == true:
 		self_up = ($self_up.get_global_transform().origin - self.get_global_transform().origin).normalized()
 		var true_up = Vector2(0, 1)
@@ -32,6 +34,8 @@ func _integrate_forces(state):
 		var z_angle = true_up.angle_to(Vector2(self_up.z, self_up.y))
 		var righting_force = Vector3(z_angle, 0, -x_angle) * RIGHTING_STRENGTH
 		self.add_torque(righting_force)
+		AIM_STRENGTH_SCALE = 2.0
+	
 	
 	var dir = Vector3(0, 0, 0)
 	var cam_xform = get_node("../Camera_Look_to").get_global_transform()
@@ -45,10 +49,9 @@ func _integrate_forces(state):
 	if Input.is_action_pressed("MOVE_RIGHT"):
 		dir += cam_xform.basis[2]
 	dir = dir.normalized()
-	var aim_force = dir * AIM_STRENGTH
+	var aim_force = dir * AIM_STRENGTH * AIM_STRENGTH_SCALE
 	self.add_torque(aim_force)
 	
 	for impulse in impulse_queue:
-		print("Jumping!!!")
 		self.apply_impulse(impulse[0], impulse[1])
 	impulse_queue.clear()
