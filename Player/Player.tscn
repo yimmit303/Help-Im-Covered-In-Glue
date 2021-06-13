@@ -22,8 +22,6 @@ extents = Vector3( 0.15, 0.2, 0.15 )
 extents = Vector3( 0.1, 0.05, 0.05 )
 
 [sub_resource type="PhysicsMaterial" id=4]
-friction = 100.0
-rough = true
 
 [sub_resource type="CapsuleShape" id=5]
 radius = 0.0742187
