@@ -13,7 +13,6 @@ func _process(delta):
 
 func _on_Conveyor_Area_body_entered(body):
 	if body is RigidBody:
-		print(self.name)
 		bodys_on.append(body)
 
 func _on_Conveyor_Area_body_exited(body):
