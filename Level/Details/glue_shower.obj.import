@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_shower.obj-2ec817139af88489369175e09f3d69ff.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_shower.obj-2ec817139af88489369175e09f3d69ff.mesh" ]
+
+source_file="res://Level/Details/glue_shower.obj"
+dest_files=[ "res://.import/glue_shower.obj-2ec817139af88489369175e09f3d69ff.mesh", "res://.import/glue_shower.obj-2ec817139af88489369175e09f3d69ff.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
