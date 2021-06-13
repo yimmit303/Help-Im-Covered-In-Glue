@@ -6609,19 +6609,19 @@ omni_range = 19.2
 omni_attenuation = 2.73208
 
 [node name="MeshInstance2" type="MeshInstance" parent="."]
-transform = Transform( 0.02, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 54.2022, 6, -4 )
+transform = Transform( 0.02, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 54.0787, 6, -4 )
 material_override = SubResource( 432 )
 mesh = SubResource( 433 )
 material/0 = null
 
 [node name="MeshInstance3" type="MeshInstance" parent="."]
-transform = Transform( 0.02, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 54.2022, 6, 1.98537 )
+transform = Transform( 0.02, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 54.0252, 6, 1.98537 )
 material_override = SubResource( 432 )
 mesh = SubResource( 433 )
 material/0 = null
 
 [node name="MeshInstance4" type="MeshInstance" parent="."]
-transform = Transform( 0.02, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 54.2022, 6, 7.94171 )
+transform = Transform( 0.02, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 54.0582, 6, 7.94171 )
 material_override = SubResource( 432 )
 mesh = SubResource( 433 )
 material/0 = null
