@@ -20,15 +20,15 @@ extents = Vector3( 0.15, 0.2, 0.15 )
 [sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.1, 0.05, 0.05 )
 
-[sub_resource type="PhysicsMaterial" id=5]
+[sub_resource type="PhysicsMaterial" id=4]
 friction = 100.0
 rough = true
 
-[sub_resource type="CapsuleShape" id=6]
+[sub_resource type="CapsuleShape" id=5]
 radius = 0.0742187
 height = 0.22685
 
-[sub_resource type="BoxShape" id=4]
+[sub_resource type="BoxShape" id=6]
 extents = Vector3( 0.05, 0.15, 0.05 )
 
 [node name="Player" type="Spatial"]
@@ -60,7 +60,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.525, -0.05 )
 gravity_scale = 0.5
 axis_lock_angular_y = true
 linear_damp = 1.0
-angular_damp = 1.0
+angular_damp = 5.0
 script = ExtResource( 9 )
 debugger_path = NodePath("../Debug_Overlay/Debug_Draw")
 
@@ -191,7 +191,7 @@ linear_limit/restitution = 2.53
 
 [node name="leg_Body" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, -0.05 )
-physics_material_override = SubResource( 5 )
+physics_material_override = SubResource( 4 )
 gravity_scale = 0.5
 contacts_reported = 1
 contact_monitor = true
@@ -207,12 +207,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.143914, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="leg_Body"]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0.160227, 0 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 disabled = true
 
 [node name="CollisionShape2" type="CollisionShape" parent="leg_Body"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="leg_attachment" type="PinJoint" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, -0.05 )

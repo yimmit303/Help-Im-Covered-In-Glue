@@ -33,12 +33,19 @@ func _integrate_forces(state):
 		var righting_force = Vector3(z_angle, 0, -x_angle) * RIGHTING_STRENGTH
 		self.add_torque(righting_force)
 	
-	var left_right = 0
-	if Input.is_action_pressed("ui_right"):
-		left_right += 1
-	if Input.is_action_pressed("ui_left"):
-		left_right -= 1
-	var aim_force = Vector3(0, 0, left_right * AIM_STRENGTH)
+	var dir = Vector3(0, 0, 0)
+	var cam_xform = get_node("../Camera_Look_to").get_global_transform()
+	
+	if Input.is_action_pressed("MOVE_FORWARD"):
+		dir += cam_xform.basis[0]
+	if Input.is_action_pressed("MOVE_BACKWARDS"):
+		dir += -cam_xform.basis[0]
+	if Input.is_action_pressed("MOVE_LEFT"):
+		dir += -cam_xform.basis[2]
+	if Input.is_action_pressed("MOVE_RIGHT"):
+		dir += cam_xform.basis[2]
+	dir = dir.normalized()
+	var aim_force = dir * AIM_STRENGTH
 	self.add_torque(aim_force)
 	
 	for impulse in impulse_queue:
