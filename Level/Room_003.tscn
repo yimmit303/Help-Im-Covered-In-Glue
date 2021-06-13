@@ -1,4 +1,4 @@
-[gd_scene load_steps=557 format=2]
+[gd_scene load_steps=559 format=2]
 
 [ext_resource path="res://Level/Details/glue_robot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Level/ConveyorBelt/ConveyorBelt.tscn" type="PackedScene" id=2]
@@ -57,6 +57,7 @@
 [ext_resource path="res://Level/Objects/RigidBody_trophy.tscn" type="PackedScene" id=55]
 [ext_resource path="res://Level/Details/glue_shower.obj" type="ArrayMesh" id=56]
 [ext_resource path="res://Level/Winbox.gd" type="Script" id=57]
+[ext_resource path="res://Level/Teleporter.gd" type="Script" id=58]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -0.150365, 0.109489, -0.59862, -0.135766, -6.93889e-18, -0.795588, -0.135766, 0, -0.616858, -0.131387, 0.1, -0.7934, -0.106558, -0.00729927, -1.00725, -0.106558, -0.00729927, -0.481803, -0.106558, 0.109489, -1.00725, -0.106558, 0.109489, -0.481803, 0.0101847, -0.00729927, -1.00725, 0.0101847, -0.00729927, -0.481803, 0.0101847, 0.109489, -1.00725, 0.0101847, 0.109489, -0.481803, 0.0642336, 0.1, -0.7934, 0.0686132, 6.93889e-18, -0.795588, 0.0686132, 0, -0.616858, 0.0832117, 0.109489, -0.59862 )
@@ -1571,6 +1572,9 @@ extents = Vector3( 1, 2.8369, 1.23874 )
 
 [sub_resource type="BoxShape" id=499]
 extents = Vector3( 1.40225, 2.00245, 0.529495 )
+
+[sub_resource type="BoxShape" id=500]
+extents = Vector3( 13.541, 1, 6.72851 )
 
 [node name="Room_003" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0304031, 0, -0.000939369 )
@@ -7612,3 +7616,10 @@ script = ExtResource( 57 )
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35768, -1.50651, -1.75639 )
 shape = SubResource( 499 )
+
+[node name="Slime_Pit" type="Area" parent="."]
+script = ExtResource( 58 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Slime_Pit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.0454, 2.76651, -12.9374 )
+shape = SubResource( 500 )
