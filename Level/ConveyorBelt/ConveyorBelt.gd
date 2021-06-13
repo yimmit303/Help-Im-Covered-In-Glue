@@ -1,7 +1,7 @@
 extends StaticBody
 
 var bodys_on = []
-var force = Vector3(0,0,10)
+export var force = Vector3(0,0,10)
 
 func _ready():
 	force = force.rotated(Vector3(0, 1, 0), deg2rad(self.rotation_degrees.y))
@@ -13,7 +13,8 @@ func _process(delta):
 
 func _on_Conveyor_Area_body_entered(body):
 	if body is RigidBody:
-		print(rotation_degrees)
+		print(self.name)
+		print("area entered")
 		bodys_on.append(body)
 
 func _on_Conveyor_Area_body_exited(body):
