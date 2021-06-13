@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_lightbulb.obj-199f5c7f145cbe8cd140f489c34f12f3.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_lightbulb.obj-199f5c7f145cbe8cd140f489c34f12f3.mesh" ]
+
+source_file="res://Level/Objects/glue_lightbulb.obj"
+dest_files=[ "res://.import/glue_lightbulb.obj-199f5c7f145cbe8cd140f489c34f12f3.mesh", "res://.import/glue_lightbulb.obj-199f5c7f145cbe8cd140f489c34f12f3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

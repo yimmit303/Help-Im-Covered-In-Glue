@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Level/Room_002.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Level/Room_003.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Level/Room_001.tscn" type="PackedScene" id=3]
+
+[node name="Master" type="Spatial"]
+
+[node name="Room_001" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, 16, -46 )
+
+[node name="Room_002" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, -18 )
+
+[node name="Room_003" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -1.90735e-06, 4, 9 )

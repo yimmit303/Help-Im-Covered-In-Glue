@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_cake.obj-ae88853a135559f9d06bbc7453b12700.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_cake.obj-ae88853a135559f9d06bbc7453b12700.mesh" ]
+
+source_file="res://Level/Objects/glue_cake.obj"
+dest_files=[ "res://.import/glue_cake.obj-ae88853a135559f9d06bbc7453b12700.mesh", "res://.import/glue_cake.obj-ae88853a135559f9d06bbc7453b12700.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

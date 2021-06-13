@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_mug.obj-1808dbb3ecefd8488ca4cbf972d48d88.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_mug.obj-1808dbb3ecefd8488ca4cbf972d48d88.mesh" ]
+
+source_file="res://Level/Objects/glue_mug.obj"
+dest_files=[ "res://.import/glue_mug.obj-1808dbb3ecefd8488ca4cbf972d48d88.mesh", "res://.import/glue_mug.obj-1808dbb3ecefd8488ca4cbf972d48d88.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

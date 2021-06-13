@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_fridge.obj-bc915e972a5f0ad0b71ce357d337519b.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_fridge.obj-bc915e972a5f0ad0b71ce357d337519b.mesh" ]
+
+source_file="res://Level/Objects/glue_fridge.obj"
+dest_files=[ "res://.import/glue_fridge.obj-bc915e972a5f0ad0b71ce357d337519b.mesh", "res://.import/glue_fridge.obj-bc915e972a5f0ad0b71ce357d337519b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

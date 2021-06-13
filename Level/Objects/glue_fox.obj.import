@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/glue_fox.obj-93b8a723486ceba9b9a2f7571765e5fe.mesh"
+
+[deps]
+
+files=[ "res://.import/glue_fox.obj-93b8a723486ceba9b9a2f7571765e5fe.mesh" ]
+
+source_file="res://Level/Objects/glue_fox.obj"
+dest_files=[ "res://.import/glue_fox.obj-93b8a723486ceba9b9a2f7571765e5fe.mesh", "res://.import/glue_fox.obj-93b8a723486ceba9b9a2f7571765e5fe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
