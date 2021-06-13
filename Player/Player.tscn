@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Player/Leg.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Player/sticky_part.gd" type="Script" id=11]
 [ext_resource path="res://Sounds/567308__bigdino1995__plasmacannon.wav" type="AudioStream" id=12]
 [ext_resource path="res://Sounds/539536__clacksberg__experimental-sequencer-music.wav" type="AudioStream" id=13]
+[ext_resource path="res://Sounds/232135__yottasounds__splat-005.wav" type="AudioStream" id=14]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.15, 0.15, 0.15 )
@@ -258,4 +259,7 @@ stream = ExtResource( 13 )
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+
+[node name="Splat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 [connection signal="body_entered" from="leg_Body" to="leg_Body" method="_on_leg_Body_body_entered"]

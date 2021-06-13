@@ -29,3 +29,4 @@ func hit_something(body):
 		new_joint.set_translation(self.get_translation())
 		get_parent().add_child(new_joint)
 		get_node("../" + self.name + "_pin_joint").attach_to(self, body)
+		get_node("../Splat").play()
