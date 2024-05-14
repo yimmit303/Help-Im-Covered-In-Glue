@@ -256,10 +256,12 @@ camera = NodePath("../../Camera_Look_to/Camera")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
+volume_db = -19.785
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 
 [node name="Splat" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
+
 [connection signal="body_entered" from="leg_Body" to="leg_Body" method="_on_leg_Body_body_entered"]
